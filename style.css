@@ -1,0 +1,88 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: teal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.task-number {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Задание 1 */
+.logo {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px 30px 50% 50%;
+  background: linear-gradient(90deg, #ffe300, #fdc800, #ffae00);
+  z-index: 0;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.logo::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg, #f6f3e9, #f6f3e9);
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 0 0 0 30px;
+}
+.logo::after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg, #272623, #323129);
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: 0 0 30px 0;
+}
+
+/* Задание 2 */
+.underline,
+.users {
+  max-width: 75vw;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+.underline-link {
+  color: teal;
+  text-decoration: none;
+  background-image: linear-gradient(teal, teal);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size .5s ease-in;
+}
+
+.underline:hover .underline-link, 
+.underline:focus .underline-link {
+  background-size: 100% 1px;
+}
+
+/* .underline-link:hover, 
+.underline-link:focus {
+  background-size: 100% 1px;
+} */
+
+/* Задание 3 */
+.users {
+  text-align: center;
+}
